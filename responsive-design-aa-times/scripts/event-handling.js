@@ -17,5 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('Search clicked');
     const modal = document.querySelector('.search-modal');
     modal.classList.toggle('search-modal--hidden');
+    
   });
 });

@@ -6,13 +6,19 @@
   font-size: 12px;
   padding: 0.5em;
   position: absolute;
-  right: 40px;
+  right: 20px;
   top: 3.5em;
   width: 200px;
+  
+  
 }
 
+.pref--hidden {
+  display:none;
+}
 .pref__section {
   border-top: 1px solid #dedede;
+  
 }
 
 .pref__section:first-child {
@@ -33,4 +39,8 @@
 
 .pref__section-link:hover {
   background-color: #dedede;
+}
+
+.search-modal--hidden {
+  visibility:hidden ;
 }

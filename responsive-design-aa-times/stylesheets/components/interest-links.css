@@ -1,0 +1,87 @@
+.interest-links {
+    
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 1fr;
+    
+    
+}
+
+.thick-border{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding:  10px;
+   
+    
+}
+.side-border {
+    border-left : 1px solid #e2e2e2 ;
+    padding: 10px;
+}
+
+.stock-border {
+    border-bottom : 1px solid #e2e2e2 ;
+    padding: 5px;
+    
+}
+
+.bold-headers{
+    font-weight: bold;
+}
+.ticker-percent{
+    color: green;
+    font-weight:900;
+    text-align: right;
+    
+}
+
+.stock-grid {
+    display: grid;
+    grid-template-columns: .05fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'EMPTY TICKER1 PRICE1'
+    'EMPTY TICKER2 PRICE2'
+    'EMPTY TICKER3 PRICE3';
+   
+}
+
+.empty-border {
+    grid-area:EMPTY ;
+}
+.ticker-1{
+    grid-area:TICKER1;
+    margin-top: 5px;
+   
+    
+}
+.ticker-2{
+    grid-area:TICKER2;
+    margin-top: 5px
+}
+.ticker-3{
+    grid-area:TICKER3;
+    padding: 10px 5px;;
+}
+
+.price-1{
+    grid-area:PRICE1;
+    
+}
+
+.price-2{
+    grid-area:PRICE2;
+}
+
+.price-3{
+    grid-area:PRICE3;
+    padding: 5px;
+}
+
+.degrees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}

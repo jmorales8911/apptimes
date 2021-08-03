@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/main-styles.css">
     <link rel='stylesheet' type='text/css' href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
-    
+    <script src='./scripts/event-handling.js'></script>
     <title>App Academy Times</title>
     
 </head>
@@ -20,11 +20,15 @@
           <div class='menu-search'>
             <a href=""><i class="fa fa-search"></i></a>
           </div>
+          <div class="search-modal menu-search search-modal--hidden">
+            <input type="search" class="search-modal__input" placeholder="Search">
+            <button class="search-model__go">Go</button>
+          </div>
         </div>
            <div class='masthead_actions'>
                <button>Subscribe Now</button>
                <button>Log In</button>
-               <i class="fas fa-cog"></i>
+               <a href=""><i class="fas fa-cog"></i></a>
                
             </div>
            <div class='masthead_technologies'>
@@ -51,36 +55,203 @@
 
             </div>
        </div>
-       <nav class="main-nav">
-            <ul>
-                <li><a href=""></a>World</li>    
-                <li><a href=""></a>SWE Online</li>    
-                <li><a href=""></a>San Francisco</li>    
-                <li><a href=""></a></li>    
-                <li><a href=""></a></li>    
-                <li><a href=""></a></li>    
-                <li><a href=""></a></li>    
-                <li><a href=""></a></li>    
+       <div class="pref pref--hidden">
+        <div class="pref__section">
+          <div class="pref__section-header ">Edition</div>
+          <ul>
+            <li class="pref__section-link"><a href="#">CSS</a></li>
+            <li class="pref__section-link"><a href="#">HTML</a></li>
+            <li class="pref__section-link"><a href="#">JavaScript</a></li>
+            <li class="pref__section-link"><a href="#">Python</a></li>
+          </ul>
+        </div>
+        <div class="pref__section">
+          <div class="pref__section-header">Help</div>
+          <ul>
+            <li class="pref__section-link"><a href="#">FAQ</a></li>
+            <li class="pref__section-link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+       <nav>
+            <ul class="main-nav">
+                <li class="spacing"><a href=""></a>World</li>    
+                <li class="spacing"><a href=""></a>SWE Online</li>    
+                <li class="spacing"><a href=""></a>San Francisco</li>    
+                <li class="spacing"><a href=""></a>New York</li>    
+                <li class="spacing"><a href=""></a>Jumpstart</li>    
+                <li class="spacing"><a href=""></a>Marketing</li>    
+                <li class="spacing"><a href=""></a>Sales</li>    
+                <li class="spacing"><a href=""></a>TalentMatch</li>    
+                <li class="spacing"><a href=""></a>Alumni</li>
+                <li class="spacing"><a href=""></a>All</li>
                 
-
-                <a href=""><li>World</li></a>
-                <a href=""><li>SWE Online</li></a>
-                <a href=""><li>San Francisco</li></a>
-                <a href=""><li>New York</li></a>
-                <a href=""><li>Jumpstart</li></a>
-                <a href=""><li>Marketing</li></a>
-                <a href=""><li>Sales</li></a>
-                <a href=""><li>TalentMatch</li></a>
-                <a href=""><li>Alumni</li></a>
-                <a href=""><li>All</li></a>
-               
             </ul>
           
-
        </nav>
+       <div class='interest-links'>
+                      
+                <div class="thick-border"><img src="./images/dog.png" alt="the dog"></div>
+
+ 
+                <div class="thick-border ">
+                    
+
+                        <p class="bold-headers ">Dog Programmers</p> 
+                        <p>Dogs are learning to code at an incredible pace.</p> 
+                    
+                </div>
+ 
+                     <div class="thick-border"><img class="side-border" src="./images/cat.png" alt="the cat"></div>
+ 
+                     <div class="thick-border">
+                        <p class="bold-headers">Cats and Coding</p> 
+                        <p>Cats are on the rise as the #1 example for coding demos.</p>
+                    </div>
+ 
+                     <div class="thick-border"><img class="side-border" src="./images/plug.png" alt="the plug"></div>
+ 
+                     <div class="thick-border">
+                         <p class="bold-headers">Plugging stuff In</p>
+                         <p>Good or Bad? Find out now. </p>
+                    </div>
+ 
+                     <div class="thick-border  stock-grid">
+                         <div class='side-border empty-border'></div>
+
+                         
+                        <div class="  stock-border ticker-1">AAO</div>
+                        <div class="price-1 stock-border ticker-percent">+100%</div>
+                        <div class=" stock-border ticker-2">SWE</div> 
+                        <div class="price-2 stock-border ticker-percent">+150%</div>
+                        <div class=" ticker-3">CAT</div>
+                        <div class="price-3 ticker-percent">+111%</div>                   
+                    </div>
+ 
+                     <div class="thick-border"><img class="side-border" src="./images/sun-icon.png" alt="the sun"></div>
+ 
+                     <div class=" degrees thick-border">
+                        <p>77°F</p>
+                    </div>
+         
+       </div>
        
     </header>
     <main>
+      <article class="main_content_grid">
+        
+
+          <h1 class=' main_content_header'>How App Academy Students Change Their Lives</h1>
+      
+        
+          <div class="aa_instructor_column">
+            <h1 class="redux_banner">App Academy Instructors on React & Redux</h1>
+
+            <p class="grey_mini_header">By APP ACADEMY INSTRUCTIONAL TEAM </p>
+            <ul class='list_bullets'>
+              <li class='bullets'>
+                It helps you write applications that behave consistently, 
+                run in different environments (client, server, and native), 
+                and are easy to test. On top of that, it provides a great 
+                developer experience, such as live code editing combined 
+                with a time traveling debugger.
+              
+              </li> 
+
+              <li class='bullets'>
+                The whole state of your app is stored in an object tree inside a single store.
+                The only way to change the state tree is to emit an action, an object describing 
+                what happened. To specify how the actions transform the state tree, you write pure 
+                reducers.
+     
+              </li>
+              
+
+            </ul>
+            
+            <a class='comments' href="">1738 Comments</a>
+          </div>
+          <div class="aa_video">
+            <iframe src="https://player.vimeo.com/video/380193367" width="480"
+              height="280" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            
+             <p>Warning: This video will make you want to change your career </p> 
+          </div>
+          <div class="opinions ">
+                              
+                <h1 class='opinion_header opinion_column_padding '>Opinions</h1>
+                    
+                <p class='grey_mini_header opinion_column_padding'>By Breakfast the Cat</p>
+                
+                <h2 class="bottom_headers opinion_column_padding ">Will Javascript ever be as easy as Python? </h2>
+                
+                <p>JavaScript continues to advance with the newly released 
+                  EcmaScript8 but it still doesn't quite read like Python.</p>
+                  <div class="opinion_bot_border">
+                    <a class='comments' href="">299 Comments</a>
+
+                  </div> 
+
+                <div> 
+                  <h2>OPERATIONS</h2>
+                  <h1 class="bottom_headers">App Academy New York Has A Brand New Office </h1>
+                  <h2 class="grey_mini_header">By NY OPERATIONS</h2> 
+                  <img src="./images/new_office.jpg">
+                </div>
+                
+                
+
+                <p >The new space features hardwood floors and brick 
+                  walls for a modern technology space with an aura for learning. </p>
+                  <a class='comments ' href="">172 Comments</a>
+                <div class="opinion_content_grid">
+
+                  <div class='torvald opinion_top_border opinion_bot_border'>Torvalds: When I Was Almost Wrong</div>
+
+                  <div class="knuth opinion_bot_border">Knuth: Art of Programming </div>
+
+                  <div class="loveLace opinion_bot_border">Lovelace: The First Algorithm </div>
+
+                  <div class="hopper opinion_bot_border"> Hopper: The First Bug </div>
+
+                  <div class="thompson opinion_bot_border opinion_top_border opinion_left_border">Thompson: Go C Unix </div>
+
+                  <div class='carmack opinion_bot_border opinion_left_border'>Carmack: My Virtual Reality </div>
+
+                  <div class="stallman opinion_bot_border opinion_left_border">Stallman: Free Speech Not Free Coffee </div>
+                </div>
+
+          </div>
+         
+         
+            
+            <div class='where_are_they'>
+              <h1 class='bottom_headers'>Where Are They Now?</h1>
+              <p class="grey_mini_header">By APP ACADEMY ALUMNI </p>
+              <p >
+                First hand stories from App Academy graduates about transitioning to
+              engineering positions at top tech companies in San Francisco.
+              </p>
+
+            </div>
+
+            <div class='cat_academy'>
+              <h1 class="bottom_headers">Cat Academy</h1>
+              <p class="grey_mini_header">By APP ACADEMY DIRECTOR OF PRODUCTS</p>
+              <p> 
+                App Academy's latest product targets those interested
+                in owning the popular feline companion by providing a 
+                curated cat care curriculum. Breakfast, Markov, Curie, 
+                Jet, and Freyja are all modern day celebrities due to 
+                their App Academy example fame.
+              </p>
+
+            </div>
+          
+        
+        
+      </article>
 
     </main>
     <footer>

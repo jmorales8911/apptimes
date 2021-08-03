@@ -1,0 +1,159 @@
+.main_content_grid {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.25;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'MAIN MAIN OPINIONS'
+    "AAINSTRUCTOR VIDEO OPINIONS"
+    "WHERE CAT OPINIONS";
+    padding: 20px;
+}
+
+.main_content_header {
+    grid-area: MAIN;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+   
+}
+
+.aa_instructor_column {
+    grid-area: AAINSTRUCTOR;
+    padding: 20px 0px;
+}
+
+.aa_video {
+    grid-area: VIDEO;
+    padding: 20px;
+}
+
+.main_content_banner{
+    display: inline
+}
+
+.redux_banner {
+    font-weight: bold;
+    font-size: 25px ;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.grey_mini_header {
+    color: #999;
+    padding: 5px 0px;
+    font-size: 12px;
+
+}
+.list_bullets {
+    list-style-type: disc;
+    padding: 10px ;
+}
+
+.bullets {
+    padding:10px;
+}
+
+.comments {
+    color: #6288a5;
+}
+
+
+
+.where_are_they {
+    grid-area: WHERE;
+    border-top: 2px solid black;
+    border-right: 1px solid #999;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.cat_academy {
+    grid-area: CAT;
+    border-top: 2px solid black;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-right: 1px solid #999;
+}
+
+.bottom_headers{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.opinions {
+    grid-area: OPINIONS;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+}
+.opinion_header {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.opinion_column_padding {
+    padding:10px 0px;
+}
+
+.paragraph-padding{
+    padding: 10px;
+}
+
+
+
+.opinion_content_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'TORVALD THOMPSON'
+    "KNUTH CARMACK"
+    "LOVE STALLMAN"
+    'HOPPER .' ;
+    
+}
+
+.torvald{
+    grid-area: TORVALD;
+    display: inline;
+}
+
+.knuth {
+    grid-area: KNUTH;
+}
+
+.loveLace {
+    grid-area: LOVE;
+}
+
+.hopper {
+    grid-area: HOPPER
+}
+
+.thompson {
+    grid-area: THOMPSON;
+    padding: 10px;
+}
+
+.carmack {
+    grid-area: CARMACK;
+    padding: 10px;
+}
+
+.stallman {
+    grid-area: STALLMAN;
+    padding: 10px;
+}
+
+.opinion_top_border{
+    border-top:  1px solid #999;
+}
+
+.opinion_left_border {
+    border-left: 1px solid #999;
+}
+
+.opinion_bot_border {
+    border-bottom: 1px solid #999;
+}
