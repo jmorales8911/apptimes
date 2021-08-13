@@ -157,3 +157,10 @@
 .opinion_bot_border {
     border-bottom: 1px solid #999;
 }
+
+.opinion_bottom_headers{
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+    
+}
